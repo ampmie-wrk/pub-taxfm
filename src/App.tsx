@@ -124,7 +124,8 @@ export default function App() {
   useEffect(() => {
     if (!window.html2canvas) {
       const script = document.createElement('script');
-      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
+      //script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
+      script.src = 'https://cdn.jsdelivr.net/npm/html2canvas-pro@1.5.7/dist/html2canvas-pro.min.js';
       script.async = true;
       document.body.appendChild(script);
     }
